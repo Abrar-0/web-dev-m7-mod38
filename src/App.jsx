@@ -28,8 +28,18 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Student></Student>
     </>
   )
 }
 
+function Student(){
+  const student = {
+    name: "Abrar",
+    age: 29,
+    money: false
+  }
+  const old = 23
+  return <h3>Hello I am {student.name}, my age is {old} and im {student.money? 'rich' : 'poor' }</h3>
+}
 export default App
